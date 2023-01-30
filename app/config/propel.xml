@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<config>
+    <propel>
+        <general>
+           <project>sampleCrud</project>
+           <version>2.0.0-dev</version>
+        </general>
+        <database>
+            <connections>
+                <connection id="sampleCrud">
+                    <adapter>mysql</adapter>
+                    <classname>Propel\Runtime\Connection\ConnectionWrapper</classname>
+                    <dsn>mysql:host=localhost;dbname=sampleCrud</dsn>
+                    <user>admin</user>
+                    <password>admin1</password>
+                    <settings>
+                        <charset>utf8</charset>
+                    </settings>
+                </connection>
+            </connections>
+        </database>
+        <runtime>
+            <defaultConnection>sampleCrud</defaultConnection>
+            <connection>sampleCrud</connection>
+        </runtime>
+        <generator>
+            <defaultConnection>sampleCrud</defaultConnection>
+            <connection>sampleCrud</connection>
+        </generator>
+    </propel>
+</config>

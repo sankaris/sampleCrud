@@ -1,0 +1,11 @@
+{% for author in author %}
+    <tr>
+        <td>{{ author.id }}</td>
+        <td>{{ author.firstName }}</td>
+        <td>{{ author.LastName }}</td>
+    </tr>
+{% else %}
+    <tr>
+        <td colspan="6">No records found</td>
+    </tr>
+{% endfor %}
